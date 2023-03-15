@@ -9,13 +9,25 @@ Alan Lieu, Dean Mattes
 Alan Lieu, Dean Mattes
 
 ## Problem to resolve: 
+\
+
 
 ## Similar works:
+\
+
 
 ## assumptions / operating environments / intended usage:
+\
+
 
 ## High-level description: 
+\
+
 
 ## Functionality: 
+\
+
 
 ## Operations: 
+\
+
