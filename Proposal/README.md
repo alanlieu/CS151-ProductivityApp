@@ -12,9 +12,9 @@ Alan Lieu
 Technology has made our lives much easier and more enjoyable. However, there are negative consequences to this. We may become addicted to technology to the point where it can affect many aspects of our lives by disrupting our focus, encourage procrastination, and can potentially cause health issues. With this program users can manage their screen time, reduce digital distractions, and in return boost their productivity and promote healthy use of technology.
 
 ## Similar works:
-Productive - Habit tracker [1]
+Productive - Habit tracker [[1]]
 \
-Flora - green focus [2]
+Flora - green focus [[2]]
 
 ## Assumptions / operating environments / intended usage:
 The operating environment of this program would be on a website. The user would be using this app to allow them to enhance their focus. The user can personalize the program to accommodate their needs. 
