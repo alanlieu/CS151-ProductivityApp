@@ -2,7 +2,7 @@
 
 **Group 6:** Alan Lieu, Dean Mattes
 
-## Team members working on the proposal:
+**Team members working on the proposal:**
 
 ## Problem to resolve: 
 
