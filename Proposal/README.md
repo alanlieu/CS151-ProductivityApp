@@ -35,5 +35,5 @@ Flora - green focus [2]
 
 
 ## References: 
-[1]: <https://productiveapp.io/> "Productive - Habit tracker"
-[2]: <https://flora.appfinca.com/en/> "Flora - green focus"
+[1]: <https://productiveapp.io/> 
+[2]: <https://flora.appfinca.com/en/> 
