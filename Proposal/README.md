@@ -1,8 +1,10 @@
 # CS151-Project
 
-**Group 6:** \Alan Lieu, Dean Mattes
+**Group 6:**
+  Alan Lieu, Dean Mattes
 
-**Team members working on the proposal:** \Alan Lieu, Dean Mattes
+**Team members working on the proposal:**
+  Alan Lieu, Dean Mattes
 
 ## Problem to resolve: 
 
