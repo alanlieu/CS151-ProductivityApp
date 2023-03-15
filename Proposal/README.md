@@ -14,9 +14,9 @@ Technology has made our lives much easier and more enjoyable. However, there are
 
 ## Similar works:
 \
-Productive - Habit tracker [1]
+Productive - Habit tracker [1]:<https://productiveapp.io/> 
 \
-Flora - green focus [2] 
+Flora - green focus [2]: <https://flora.appfinca.com/en/> 
 
 ## Assumptions / operating environments / intended usage:
 \
