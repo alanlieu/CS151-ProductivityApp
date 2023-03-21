@@ -12,9 +12,9 @@ Alan Lieu
 Technology has made our lives much easier and more enjoyable. However, there are negative consequences to this. We may become addicted to technology to the point where it can affect many aspects of our lives by disrupting our focus, encourage procrastination, and can potentially cause health issues. With this program users can manage their screen time, reduce digital distractions, and in return boost their productivity and promote healthy use of technology.
 
 ## Similar works:
-Productive - Habit tracker [[1]]
+Productive - Habit tracker
 \
-Flora - green focus [[2]]
+Flora - green focus 
 
 ## Assumptions / operating environments / intended usage:
 The operating environment of this program would be on a website. The user would be using this app to allow them to enhance their focus. The user can personalize the program to accommodate their needs. 
@@ -26,5 +26,5 @@ The approach is to make this program as personalizable as possible. For example,
 A user may use this program to track and manage their screen time throughout the day by logging their activity. They can also set personalized goals, reminders, and notifications that will help them make progress in their activities. The reminders can be set to remind users to not use websites that might distract them and reduce their productivity. Since this program also wants to discourage additional unnecessary technology usage, the activity logging feature will also display acitivites that are non-digital to encourage better health habits. The user will also be able to see their data through a dashboard to track how much progress they have made.
 
 ## References: 
-[1]: <https://productiveapp.io/> 1 https://productiveapp.io/
-[2]: <https://flora.appfinca.com/en/> 2 https://flora.appfinca.com/en/
+Productive - Habit tracker: https://productiveapp.io/
+Flora - green focus: https://flora.appfinca.com/en/
