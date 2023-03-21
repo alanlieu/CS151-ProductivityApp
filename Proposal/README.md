@@ -27,4 +27,5 @@ A user may use this program to track and manage their screen time throughout the
 
 ## References: 
 Productive - Habit tracker: https://productiveapp.io/
+\
 Flora - green focus: https://flora.appfinca.com/en/
