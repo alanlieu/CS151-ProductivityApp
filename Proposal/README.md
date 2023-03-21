@@ -26,5 +26,5 @@ The approach is to make this program as personalizable as possible. For example,
 A user may use this program to track and manage their screen time throughout the day by logging their activity. They can also set personalized goals, reminders, and notifications that will help them make progress in their activities. The user can also block websites or applications that they deem distracting for a certain amount of time or until a task is finished. Since this program also wants to discourage additional unnecessary technology usage, the activity logging feature will also display acitivites that are non-digital to encourage better health habits. The user will also be able to see their data through graphs to track how much progress they have made.
 
 ## References: 
-[1]:<https://productiveapp.io/> 
-[2]:<https://flora.appfinca.com/en/> 
+1 <https://productiveapp.io/> 
+2 <https://flora.appfinca.com/en/> 
