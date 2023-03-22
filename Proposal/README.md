@@ -6,7 +6,7 @@ Alan Lieu, Dean Mattes
 
 **Team members working on the proposal:** 
 \
-Alan Lieu
+Alan Lieu, Dean Mattes
 
 ## Problem to resolve: 
 Technology has made our lives much easier and more enjoyable. However, there are negative consequences to this. We may become addicted to technology to the point where it can affect many aspects of our lives by disrupting our focus, encourage procrastination, and can potentially cause health issues. With this program users can manage their screen time, reduce digital distractions, and in return boost their productivity and promote healthy use of technology.
