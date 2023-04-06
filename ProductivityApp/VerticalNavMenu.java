@@ -19,7 +19,7 @@ public class VerticalNavMenu extends JFrame implements ActionListener {
 		// Create menu panel
 		menuPanel = new JPanel();
 		menuPanel.setLayout(new BoxLayout(menuPanel, BoxLayout.Y_AXIS));
-		menuPanel.setBackground(Color.LIGHT_GRAY);
+		menuPanel.setBackground(Color.GRAY);
 		menuPanel.setPreferredSize(new Dimension(250, getHeight()));
 		
 		// Add menu items
@@ -39,6 +39,7 @@ public class VerticalNavMenu extends JFrame implements ActionListener {
 		JToolBar toolBar = new JToolBar();
 		toolBar.setFloatable(false);
 		toolBar.add(toggleButton);
+		toolBar.setBackground(Color.LIGHT_GRAY);
 
 		// Add menu panel and toolbar to content panel
 		getContentPane().setLayout(new BorderLayout());
