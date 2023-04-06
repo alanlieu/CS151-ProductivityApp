@@ -16,38 +16,37 @@ public class VerticalNavMenu extends JFrame implements ActionListener {
 	public VerticalNavMenu() {
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-		// Create the menu panel
+		// Create menu panel
 		menuPanel = new JPanel();
 		menuPanel.setLayout(new BoxLayout(menuPanel, BoxLayout.Y_AXIS));
 		menuPanel.setBackground(Color.LIGHT_GRAY);
-
-		// Add the menu items
+		menuPanel.setPreferredSize(new Dimension(250, getHeight()));
+		
+		// Add menu items
 		addItem("Dashboard", new DashboardPanel());
 		addItem("Timer", new TimerPanel());
 		addItem("To-Do List", new TodolistPanel());
 		addItem("Log Out", new LogoutPanel());
 
-		// Create the toggle button
+		// Create toggle button
 		toggleButton = new JButton("☰");
 		toggleButton.setFocusable(false);
 		toggleButton.addActionListener(this);
 		toggleButton.setPreferredSize(new Dimension(50, 50));
 		toggleButton.setMaximumSize(new Dimension(50, 50));
 
-		// Create a toolbar for the toggle button
+		// Create toolbar for the toggle button
 		JToolBar toolBar = new JToolBar();
 		toolBar.setFloatable(false);
 		toolBar.add(toggleButton);
 
-		// Add the menu panel and toolbar to the content pane
+		// Add menu panel and toolbar to content panel
 		getContentPane().setLayout(new BorderLayout());
 		getContentPane().add(toolBar, BorderLayout.NORTH);
 		getContentPane().add(menuPanel, BorderLayout.WEST);
+		
 
-		// Set the preferred width of the menu panel
-		menuPanel.setPreferredSize(new Dimension(250, getHeight()));
-
-		// Create and add the main content panel
+		// Create and add main content panel
 		contentPanel = new JPanel();
 		contentPanel.setBackground(Color.WHITE);
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
@@ -64,7 +63,7 @@ public class VerticalNavMenu extends JFrame implements ActionListener {
 		label.setFont(new Font("Arial", Font.PLAIN, 18));
 		label.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-		// Add a mouse listener to show the selected panel
+		// Add a mouse listener to show selected panel
 		label.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
