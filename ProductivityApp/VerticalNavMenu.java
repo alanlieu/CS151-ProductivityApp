@@ -14,8 +14,6 @@ public class VerticalNavMenu extends JFrame implements ActionListener {
 	private JPanel contentPanel;
 
 	public VerticalNavMenu() {
-		super("Vertical Navigation Menu");
-
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
 		// Create the menu panel
@@ -91,7 +89,7 @@ public class VerticalNavMenu extends JFrame implements ActionListener {
 		new VerticalNavMenu();
 	}
 
-	// HomePanel
+	// DashboardPanel
 	class DashboardPanel extends JPanel {
 		private static final long serialVersionUID = 1L;
 
@@ -101,7 +99,7 @@ public class VerticalNavMenu extends JFrame implements ActionListener {
 		}
 	}
 
-	// AboutPanel
+	// TimerPanel
 	class TimerPanel extends JPanel {
 		private static final long serialVersionUID = 1L;
 
@@ -111,7 +109,7 @@ public class VerticalNavMenu extends JFrame implements ActionListener {
 		}
 	}
 
-	// ContactPanel
+	// TodolistPanel
 	class TodolistPanel extends JPanel {
 		private static final long serialVersionUID = 1L;
 
@@ -121,7 +119,7 @@ public class VerticalNavMenu extends JFrame implements ActionListener {
 		}
 	}
 
-	// SettingsPanel
+	// LogoutPanel
 	class LogoutPanel extends JPanel {
 		private static final long serialVersionUID = 1L;
 
