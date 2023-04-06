@@ -1,4 +1,4 @@
-# CS151-Digital Detox
+# CS151-Productivity App
 
 **Group 6:**
 \
