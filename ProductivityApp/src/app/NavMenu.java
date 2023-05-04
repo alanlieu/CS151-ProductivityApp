@@ -40,7 +40,7 @@ public class NavMenu extends JFrame implements ActionListener {
 		Color toggleColor = Color.decode("#808080");
 		Color backgroundColor = Color.decode("#50525e");
 		Font font = new Font("Verdana", Font.BOLD, 14);
-		EmptyBorder menuPanelPadding = new EmptyBorder(10, 0, 20, 0);
+		EmptyBorder menuPanelPadding = new EmptyBorder(0, 0, 20, 0);
 		Dimension buttonSize = new Dimension(250, 50);
 		ImageIcon dashboardIcon = new ImageIcon("images/round_dashboard_white_24dp.png");
 		ImageIcon timerIcon = new ImageIcon("images/round_timer_white_24dp.png");
