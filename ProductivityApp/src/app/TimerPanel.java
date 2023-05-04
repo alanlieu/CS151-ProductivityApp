@@ -6,6 +6,7 @@ import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -38,6 +39,8 @@ public class TimerPanel extends JPanel {
 	private Timer restTimer;
 	private int workRemainingSeconds;
 	private int restRemainingSeconds;
+	private static int workCount;
+	private static int restCount;
 	
 	public TimerPanel() {
 		Font font = new Font("Verdana", Font.PLAIN, 42);
@@ -53,7 +56,7 @@ public class TimerPanel extends JPanel {
 		JLabel restMinuteLabel = new JLabel("Minutes");
 		JLabel restSecondLabel = new JLabel("Seconds");
 		JPanel timerPanel = new JPanel();
-
+		
 		timerPanel.setBackground(backgroundColor);
 		timerPanel.setLayout(new BoxLayout(timerPanel, BoxLayout.Y_AXIS));
 		timerPanel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.black), "Timer",
@@ -222,7 +225,7 @@ public class TimerPanel extends JPanel {
 				resetButton.setBackground(resetButtonColor);
 			}
 		});
-
+		
 		workTimer = new Timer(1000, e -> updateWorkTimer());
 		restTimer = new Timer(1000, e -> updateRestTimer());
 
@@ -230,8 +233,17 @@ public class TimerPanel extends JPanel {
 				+ (int) restSecSpinner.getValue();
 		workRemainingSeconds = (int) workHourSpinner.getValue() * 3600 + (int) workMinSpinner.getValue() * 60
 				+ (int) workSecSpinner.getValue();
+		
 	}
-
+    
+    void actionPerformed(ActionEvent event) {
+    	if (event.getSource() == workTimer) {
+    	    workCount++;
+    	} else if (event.getSource() == restTimer) {
+    	    restCount++;
+    	}
+    }
+	
 	void startTimers() {
 		if ((int) workHourSpinner.getValue() == 0 && (int) workMinSpinner.getValue() == 0
 				&& (int) workSecSpinner.getValue() == 0 && (int) restHourSpinner.getValue() == 0
@@ -348,5 +360,13 @@ public class TimerPanel extends JPanel {
 		int minutes = (seconds % 3600) / 60;
 		int secs = seconds % 60;
 		return String.format("%02d:%02d:%02d", hours, minutes, secs);
+	}
+	
+	static int getWorkCount() {
+		return workCount;
+	}
+	
+	static int getRestCount() {
+		return restCount;
 	}
 }
