@@ -5,11 +5,15 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.Insets;
 
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.ScrollPaneConstants;
 import javax.swing.border.Border;
+import javax.swing.plaf.basic.BasicScrollBarUI;
 
 public class DashboardPanel extends JPanel {
 	private static final long serialVersionUID = 1L;
@@ -18,6 +22,7 @@ public class DashboardPanel extends JPanel {
 		// Set background color
 		Color backgroundColor = Color.decode("#50525e");
 		Color panelColor = Color.decode("#858582");
+		Color scrollColor = Color.decode("#808080");
 		Dimension panelSize = new Dimension(400, 290);
 		Border raisedBevel = BorderFactory.createRaisedBevelBorder();
 		Border loweredBevel = BorderFactory.createLoweredBevelBorder();
@@ -54,18 +59,53 @@ public class DashboardPanel extends JPanel {
 		leftPanel.add(welcomeLabel);
 
 		JPanel rightPanel = new JPanel();
+		rightPanel.setLayout(new GridBagLayout());
 		rightPanel.setPreferredSize(panelSize);
 		rightPanel.setBackground(panelColor);
 		rightPanel.setBorder(border);
+		
+		// Create label for work timers completed
+		JLabel workLabel = new JLabel("Work timers completed: " + TimerPanel.getWorkCount());
+		workLabel.setFont(new Font("Arial", Font.BOLD, 18));
+		workLabel.setForeground(Color.WHITE);
+		rightPanel.add(workLabel);
 
+		// Create label for rest timers completed
+		JLabel restLabel = new JLabel("Rest timers completed: " + TimerPanel.getRestCount());
+		restLabel.setFont(new Font("Arial", Font.BOLD, 18));
+		restLabel.setForeground(Color.WHITE);
+		rightPanel.add(restLabel);
+		
+		GridBagConstraints c = new GridBagConstraints();
+		
+		// Add work label
+		c.gridx = 0;
+		c.gridy = 0;
+		c.insets = new Insets(0, 0, 40, 0); 
+		rightPanel.add(workLabel, c);
+
+		// Add rest label
+		c.gridx = 0;
+		c.gridy = 1;
+		c.insets = new Insets(0, 0, 0, 0);
+		rightPanel.add(restLabel, c);
+		
 		JPanel bottomPanel = new JPanel();
 		bottomPanel.setBackground(panelColor);
 		bottomPanel.setPreferredSize(new Dimension(1200, 300));
 		bottomPanel.setBorder(border);
-
-		// Add panels to layout
-		GridBagConstraints c = new GridBagConstraints();
-
+		
+		JScrollPane scrollPane = new JScrollPane(bottomPanel, ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
+				ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		scrollPane.setBorder(null);
+		scrollPane.getVerticalScrollBar().setBackground(Color.decode("#a3a59e"));
+		scrollPane.getVerticalScrollBar().setUI(new BasicScrollBarUI() {
+		    @Override
+		    protected void configureScrollBarColors() {
+		        this.thumbColor = scrollColor;
+		    }
+		});
+		
 		// Add left panel
 		c.gridx = 0;
 		c.gridy = 0;
