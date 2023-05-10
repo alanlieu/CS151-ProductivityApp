@@ -13,7 +13,7 @@ Alan Lieu
 Dean Mattes: Part of class diagram, Sequence diagram.
 \
 \
-Alan Lieu: Class diagram, state diagram, user case diagram, sequence diagram, project proposal, welcome page, login page, sign up page, logout, dashboard, timer, to do list, navigation menu.
+Alan Lieu: Class diagram, state diagram, user case diagram, sequence diagram, project proposal, welcome page, login page, sign up page, logout, dashboard, timer, to do list, navigation menu, snapshots.
 
 ## Problem to resolve: 
 Technology has made our lives much easier and more enjoyable. However, there are negative consequences to this. We may become addicted to technology to the point where it can affect many aspects of our lives by disrupting our focus and encouraging procrastination. With this program users can keep track of their tasks, and in return boost their productivity and promote healthy use of technology.
