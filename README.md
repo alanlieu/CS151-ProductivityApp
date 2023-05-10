@@ -6,12 +6,12 @@ Alan Lieu, Dean Mattes
 
 **Team members working on the proposal:** 
 \
-\
 Alan Lieu
 
 **Contributions**
 \
 Dean Mattes: Part of class diagram, Sequence diagram.
+\
 \
 Alan Lieu: Class diagram, state diagram, user case diagram, sequence diagram, project proposal, welcome page, login page, sign up page, logout, dashboard, timer, to do list, navigation menu.
 
