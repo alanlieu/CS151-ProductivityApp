@@ -27,6 +27,9 @@ The approach is to make this program personalizable. The user can set reminders 
 ## Functionality:
 The user can set personalized goals and reminders that will help them make progress in their activities. The reminders can be set to remind users to not use websites that might distract them and reduce their productivity. Since this program also wants to discourage additional unnecessary technology usage, the  program will display acitivites that are non-digital to encourage better health habits, such as a reminder to get away from the computer every once in a while. The user will also be able to view their progress and activity through a dashboard to track how much progress they have made.
 
+## Operations:
+Anyone can create an account. Once an account is created, the user can enjoy all the features that are within the application. 
+
 ## Steps to run code:
 Start the code by running the WelcomePage.java class. Then you can create an account or login with an existing account. Once you are in, you can use the timer and to do list for your work. There were plans for many more features such as reminders, goals, and achievements, however due to time, they were unable to be implemented.
 
